@@ -1,6 +1,10 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
+        <file>Chunky Felt.otf</file>
+        <file>Resources/big-spelling-list-c.txt</file>
+        <file>MainPage.qml</file>
+        <file>StartPage.qml</file>
+        <file>ScorePage.qml</file>
     </qresource>
 </RCC>

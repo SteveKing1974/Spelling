@@ -3,7 +3,7 @@
 #include <QSettings>
 #include <QDebug>
 
-static const char* g_Version = "0.1";
+static const char* g_Version = "0.2";
 
 ScoreControl::ScoreControl(QObject *parent) :
     QObject(parent),
@@ -69,6 +69,23 @@ void ScoreControl::updateSettings()
 
         m_Settings.setValue("completed", newCompleted);
         savedVersion = QVariant("0.1");
+    }
+
+    if (savedVersion == QVariant("0.1"))
+    {
+        const QStringList completed = completedLists();
+        QStringList newCompleted;
+        QStringList::const_iterator i = completed.begin();
+
+        while (i!=completed.end())
+        {
+            QStringList splitVals = (*i).split(" - ");
+            newCompleted.append(splitVals[0] + " - " + splitVals[1].trimmed().toLower());
+            ++i;
+        }
+
+        m_Settings.setValue("completed", newCompleted);
+        savedVersion = QVariant("0.2");
     }
 
     m_Settings.setValue("version", currentVersion);

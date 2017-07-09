@@ -26,8 +26,6 @@ void ListManager::loadLists()
     QFileInfoList::const_iterator i = allListFiles.begin();
     while (i!=allListFiles.end())
     {
-        qDebug() << "File is" << i->absoluteFilePath();
-
         QFile listFile(i->absoluteFilePath());
 
         if (listFile.open(QIODevice::ReadOnly))
@@ -142,7 +140,7 @@ void ListManager::parseFile(QFile &listFile)
         case eReadingHeader:
             if (!l.isEmpty())
             {
-                listName = QString(l);
+                listName = QString(l).trimmed().toLower();
                 eState = eWaitingForList;
             }
             break;
@@ -156,7 +154,12 @@ void ListManager::parseFile(QFile &listFile)
             break;
 
         case eReadingList:
-            if (l.isEmpty())
+            if (!l.isEmpty())
+            {
+                addEntry(l, listContent);
+            }
+
+            if (l.isEmpty() || listFile.atEnd())
             {
                 eState = eWaitingForHeader;
 
@@ -175,10 +178,7 @@ void ListManager::parseFile(QFile &listFile)
                     listName.clear();
                 }
             }
-            else
-            {
-                addEntry(l, listContent);
-            }
+
             break;
 
         }

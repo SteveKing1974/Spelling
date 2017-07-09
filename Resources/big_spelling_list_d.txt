@@ -1,0 +1,163 @@
+Easy Words 2
+
+1
+oa/o-e
+1. road
+2. load
+3. toad
+4. boat
+5. coat
+6. goat
+7. moat
+8. woke
+9. poke
+10. stroke
+
+2
+er/ur/ir
+1. her
+2. herb
+3. kerb
+4. curl
+5. hurt
+6. burn
+7. turn
+8. dirt
+9. girl
+10. bird
+
+3
+HFW
+1.push
+2.pull
+3.seen
+4.some
+5.take
+6.than
+7.that
+8.them
+9.then
+10.time
+
+4
+aw
+1. jaw
+2. law
+3. paw
+4. raw
+5. saw
+6. lawn
+7. dawn
+8. yawn
+9. claw
+10.straw
+
+5
+HFW
+
+1.Thursday
+2.Friday
+3.Saturday
+4.Sunday
+5.one
+6.two
+7.three
+8.four
+9.five
+10.six
+
+6
+ore
+
+1.score
+2.store
+3.more
+4.shore
+5.tore
+6.bore
+7.chore
+8.ignore
+9.adore
+10.spore
+
+
+7
+or
+
+1. sport
+2. short
+3. torn
+4. born
+5. corn
+6. horn
+7.sort
+8.fork
+9.cork
+10.orb
+
+
+8
+ow
+
+1. how
+2. now
+3. cow
+4. wow
+5. row
+6. brown
+7. down
+8. town
+9. howl
+10. drown
+
+9
+oi
+1. boy
+2. toy
+3. joy
+4. Roy
+5. soya
+6. ploy
+7. oink
+8. boil
+9. foil
+10. coin
+
+10
+HFW
+1.make
+2.made
+3.many
+4.more
+5.much
+6.must
+7.name
+8.next
+9.once
+10.over
+
+11
+prefix un
+1. undo
+2. untie
+3. unrest
+4. unzip
+5. unlock
+6. uncut
+7. unwell
+8. unfold
+9. unpick
+10. unfit
+
+12
+air/are
+1. air
+2. pair
+3. fair
+4. stair
+5. hair
+6. lair
+7. flair
+8. care
+9. rare
+10. dare

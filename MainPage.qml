@@ -28,6 +28,28 @@ Item {
 
             visible: GameControl.gameState != GameControl.Write
         }
+
+        Button {
+            anchors.fill: parent
+
+            focus: Qt.NoFocus
+            contentItem: Label {
+                font.family: "Chunky Felt"
+                font.pointSize: 14
+
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+
+                wrapMode: Text.WordWrap
+
+                text: "Say the word again"
+            }
+
+            enabled: GameControl.gameState == GameControl.Write
+            visible: enabled
+
+            onClicked: GameControl.sayWord()
+        }
     }
 
     Rectangle {

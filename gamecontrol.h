@@ -6,6 +6,8 @@
 #include "listmanager.h"
 #include "scorecontrol.h"
 
+class QTextToSpeech;
+
 class GameControl : public QObject
 {
     Q_OBJECT
@@ -67,8 +69,11 @@ public slots:
 
     void nextState(const QString& typedVal);
     void showScores();
+    void sayWord() const;
 
 private:
+    QTextToSpeech *m_speech;
+
     ListManager m_WordLists;
     ScoreControl m_Scorer;
     GameState m_State;

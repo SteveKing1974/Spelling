@@ -1,12 +1,15 @@
 #include "gamecontrol.h"
 
 #include <QDebug>
+#include <QTextToSpeech>
 
 GameControl::GameControl(QObject *parent) :
     QObject(parent),
     m_State(GameControl::StartPage),
     m_CurrentIndex(0)
 {
+    m_speech = new QTextToSpeech(this);
+
     if (m_Scorer.username().isEmpty())
     {
         m_State = EnterName;
@@ -115,6 +118,7 @@ void GameControl::nextState(const QString &typedVal)
 
     case Look:
         m_State = Say;
+        m_speech->say(currentWord());
         break;
 
     case Say:
@@ -175,4 +179,9 @@ void GameControl::showScores()
 {
     m_State = Score;
     emit gameStateChanged();
+}
+
+void GameControl::sayWord() const
+{
+    m_speech->say(currentWord());
 }

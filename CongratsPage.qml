@@ -6,10 +6,10 @@ import Qt.spellingGame.gameController 1.0
 
 Item {
     Text {
-        id: headingText
+        id: congratsText
 
         font.family: "Chunky Felt"
-        font.pointSize: 18
+        font.pointSize: 24
 
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
@@ -23,32 +23,26 @@ Item {
 
         wrapMode: Text.WordWrap
 
-        text: "You've completed all of these lists:"
+        text: "Excellent!"
     }
 
-    Rectangle {
-        anchors.top: headingText.bottom
+    Text {
+        font.family: "Chunky Felt"
+        font.pointSize: 24
+
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+
+        height: parent.height*0.2
+
+        anchors.top: congratsText.bottom
+        anchors.margins: 20
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.bottom: nextButton.top
 
-        anchors.margins: 20
+        wrapMode: Text.WordWrap
 
-        border.color: "black"
-
-        ListView {
-            anchors.fill: parent
-            anchors.margins: 10
-
-            model: GameControl.completedLists
-
-            delegate: Text {
-                font.family: "Chunky Felt"
-                font.pointSize: 14
-
-                text: modelData
-            }
-        }
+        text: "You completed word list - " + GameControl.currentList
     }
 
     Button {
@@ -64,7 +58,7 @@ Item {
         font.family: "Chunky Felt"
         font.pointSize: 24
 
-        text: "Back"
+        text: "Try another list"
         onClicked: GameControl.nextState("")
     }
 }

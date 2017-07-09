@@ -1,0 +1,223 @@
+Medium Words 5
+
+1
+Suffixes -er and silent letters
+
+1. lamb
+2. comb
+3. bomb
+4. plumb
+5. tomb
+6. crumb
+7. knew
+8. knuckle
+9. knowing
+10. knife
+11. doubt
+12. rhyme
+13. rhubarb
+14. honest
+15. halves
+
+2
+est
+1. cuter
+2. cutest
+3. thinner
+4. thinnest
+5. bigger
+6. biggest
+7. tidier
+8. tidiest
+9. happier
+10. happiest
+11. crazier
+12. craziest
+13. funnier
+14. funniest
+
+3
+wh
+
+1. whisper
+2. whistle
+3. whirl
+4. whine
+5. meanwhile
+6. why
+7. wheat
+8. wheel
+9. whip
+10. whisk
+11. whisky
+12. whirr
+13. whiten
+14. whippet
+15. wheeze
+
+4
+drop the e +ing
+
+1.hoping
+2.coming
+3.smiling
+4.taking
+5.caring
+6.making
+7.dividing
+8.sharing
+9.hiding
+10.riding
+11.baking
+12.racing
+13.chasing
+14.surprising
+15.advancing
+
+5
+ir/er/ar/
+
+1. third
+2. blackbird
+3. lighter
+4. learner
+5. returning
+6. sharper
+7. artistic
+8. masked
+9. faster
+10. classroom
+11.glass
+12.flask
+13.bask
+14.unmask
+15.task
+
+7
+ure
+
+1. measure
+2. treasure
+3. furniture
+4. adventure
+5. future
+6. mature
+7. picture
+8. texture
+9. rapture
+10. feature
+11.azure
+12.treasure
+13.measure
+14.vulture
+15.brochure
+
+8
+air/ear and ere
+
+1. unfairness
+2. sharing
+3. staircase
+4. repairing
+5. tearing
+6. pier
+7. yearly
+8. here
+9. cheering
+10. appear
+11.square
+12.despair
+13.compare
+14.unaware
+15.millionaire
+
+6
+adding y to words ending in e
+1.laze
+2.lazy
+3.ease
+4.easy
+5.shine
+6.shiny
+7.rose
+8.rosy
+9.stony
+10.breezy
+11.bony
+12.wheezy
+13.cheeky
+14.smoke
+15.smoky
+
+
+9
+MFW
+1.those
+2.today
+3.tries
+4.under
+5.until
+6.watch
+7.while
+8.whole
+9.world
+10.right
+11.young
+12.across
+13.almost
+14.always
+15.around
+
+10
+MFW
+1.before
+2.better
+3.change
+4.coming
+5.during
+6.father
+7.follow
+8.garden
+9.inside
+10.jumped
+11.mother
+12.number
+13.opened
+14.second
+15.window
+
+11
+MFW
+1.animals
+2.balloon
+3.between
+4.brought
+5.clothes
+6.friends
+7.morning
+8.outside
+9.started
+10.stopped
+11.thought
+12.through
+13.without
+14.birthday
+15.children
+
+12
+MFW
+1.different
+2.important
+3.something
+4.sometimes
+5.suddenly
+6.swimming
+7.together
+8.want
+9.what
+10.where
+11.know
+12.no
+13.their
+14.there
+15.was

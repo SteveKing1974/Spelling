@@ -11,7 +11,9 @@ enum FileReadState {
     eReadingList
 } ;
 
-ListManager::ListManager()
+ListManager::ListManager() : QObject(0),
+    m_SelectedFile(""),
+    m_SelectedList("")
 {
 
 }
@@ -26,11 +28,22 @@ void ListManager::loadLists()
     {
         qDebug() << "File is" << i->absoluteFilePath();
 
-        QFile listFile(i->absoluteFilePath().toLatin1());
+        QFile listFile(i->absoluteFilePath());
 
         if (listFile.open(QIODevice::ReadOnly))
         {
-            parseFile(listFile);
+            QString topLine = QString(listFile.readLine());
+            topLine.remove('\r');
+            topLine.remove('\n');
+
+            if (topLine.isEmpty() || m_AllFiles.contains(topLine))
+            {
+                qDebug() << "Invalid file " << listFile.fileName();
+            }
+            else
+            {
+                m_AllFiles.insert(topLine, i->absoluteFilePath());
+            }
         }
         ++i;
     }
@@ -40,14 +53,56 @@ void ListManager::loadLists()
     //qDebug() << m_AllLists;
 }
 
-QStringList ListManager::allListsNames() const
+
+QStringList ListManager::allFiles() const
+{
+    return m_AllFiles.keys();
+}
+
+QString ListManager::selectedFile() const
+{
+    return m_SelectedFile;
+}
+
+void ListManager::setSelectedFile(const QString &val)
+{
+    if ((val != m_SelectedFile) && m_AllFiles.contains(val))
+    {
+        m_SelectedFile = val;
+        m_AllLists.clear();
+        m_SelectedList.clear();
+
+        QFile listFile(m_AllFiles.value(m_SelectedFile));
+        listFile.open(QIODevice::ReadOnly);
+        parseFile(listFile);
+
+        emit selectedFileChanged();
+        emit selectedListChanged();
+    }
+}
+
+QStringList ListManager::listsInFile() const
 {
     return m_AllLists.keys();
 }
 
-QStringList ListManager::getList(const QString &name) const
+QString ListManager::selectedList() const
 {
-    return m_AllLists.value(name);
+    return m_SelectedList;
+}
+
+void ListManager::setSelectedList(const QString &val)
+{
+    if ((val != m_SelectedList) && m_AllLists.contains(val))
+    {
+        m_SelectedList = val;
+        emit selectedListChanged();
+    }
+}
+
+QStringList ListManager::wordsInList() const
+{
+    return m_AllLists.value(m_SelectedList);
 }
 
 void ListManager::addEntry(const QString &line, QStringList& listEntries)

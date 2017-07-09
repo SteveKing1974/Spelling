@@ -1,0 +1,165 @@
+Medium Words 1
+1
+ear
+1. ear
+2. near
+3. fear
+4. tear
+5. dear
+6. gear
+7. hear
+8. rear
+9. clear
+10. spear
+
+2
+HFW
+1.these
+2.three
+3.water
+4.where
+5.would
+6.little
+7.should
+8.sister
+9.another
+10.when
+
+3
+HFW
+1.about
+2.after
+3.again
+4.could
+5.first
+6.house
+7.laugh
+8.night
+9.there
+10.their
+
+4
+HFW
+1.took
+2.tree
+3.very
+4.want
+5.were
+6.what
+7.when
+8.will
+9.with
+10.your
+
+5
+suffix -le
+
+1. candle
+2. handle
+3. able
+4. table
+5. stable
+6. fable
+7. cable
+8. simple
+9. dimple
+10. jungle
+
+
+6
+-ing
+
+1. walking
+2. jumping
+3. talking
+4. reading
+5. adding
+6. feeding
+7. weeding
+8. trying
+9. crying
+10. frying
+
+
+7
+-ed
+
+1. walked
+2. jumped
+3. talked
+4. looked
+5. weeded
+6. wanted
+7. shouted
+8. hunted
+9. landed
+10. seeded
+
+8
+HFW
+1.seven
+2.eight
+3.nine
+4.ten
+5.eleven
+6.twelve
+7.thirteen
+8.fourteen
+9.fifteen
+10.sixteen
+
+9
+HFW
+
+1. seven
+2. eight
+3. nine
+4. ten
+5. purple
+6. yellow
+7. orange
+8. grey
+9. brown
+10. white
+
+10
+-ful
+
+1. hopeful
+2. cheerful
+3. painful
+4. hateful
+5. helpful
+6. careful
+7. thankful
+8. wishful
+9. mindful
+10. artful
+
+11
+plurals
+1. books
+2. games
+3. boys
+4. girls
+5. desks
+6. shoes
+7. times
+8. keys
+9. letters
+10. tables
+
+12
+HFW
+1.January
+2.February
+3.March
+4.April
+5.May
+6.June
+7.July
+8.August
+9.September
+10.October
+
+

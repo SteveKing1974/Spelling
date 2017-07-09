@@ -6,5 +6,21 @@
         <file>MainPage.qml</file>
         <file>StartPage.qml</file>
         <file>ScorePage.qml</file>
+        <file>EnterNamePage.qml</file>
+        <file>CongratsPage.qml</file>
+        <file>Resources/big_spellings_list_d.txt</file>
+        <file>Icons/tick.png</file>
+        <file>Resources/big_spelling_list_e.txt</file>
+        <file>Resources/big_spelling_list_f.txt</file>
+        <file>Resources/big_spelling_list_g.txt</file>
+        <file>Resources/big_spelling_list_h.txt</file>
+        <file>Resources/big_spelling_list_i.txt</file>
+        <file>Resources/big_spelling_list_j.txt</file>
+        <file>Resources/big_spelling_list_k.txt</file>
+        <file>Resources/big_spelling_list_l.txt</file>
+        <file>Resources/big_spelling_list_m.txt</file>
+        <file>Resources/big_spelling_list_n.txt</file>
+        <file>Resources/big_spelling_list_o.txt</file>
+        <file>Resources/big_spelling_list_p.txt</file>
     </qresource>
 </RCC>

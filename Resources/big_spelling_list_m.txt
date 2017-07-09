@@ -1,0 +1,231 @@
+Harder Words 2
+
+1
+root words
+
+1.electric
+2.electricity
+3.electrical
+4.electrician
+5.mechanic
+6.mechanical
+7.meteor
+8.meteorite
+9.meteorology
+10.prison
+11.prisoner
+12.imprisoned
+13.imprisonment
+14.mistake
+15.mistaken
+
+2
+words ending in u and i
+
+1.emu
+2.Peru
+3.kiwi
+4.haiku
+5.bhaji
+6.alibi
+7.ski
+8.spaghetti
+9.fungi
+10.macaroni
+11.tagliatelli
+12.chilli
+13.chapati
+14.ravioli
+15.corgi
+
+3
+prefixes auto-, bi and tele-
+
+1.autobiography
+2.autograph
+3.autopsy
+4.television
+5.telephone
+6.telescope
+7.bilingual
+8.bicentenary
+9.biceps
+10.binoculars
+11.bifocal
+12.bicycle
+13.biannual
+14.bias
+15.bimonthly
+
+4
+c
+
+1.score
+2.scale
+3.cough
+4.compass
+5.encourage
+6.escape
+7.cupboard
+8.concerned
+9.concentrate
+10.cauliflower
+11.consider
+12.compliment
+13.custard
+14.collar
+15.cobweb
+
+5
+mixed
+
+1.neighbour
+2.honourable
+3.beard
+4.sour
+5.tour
+6.rough
+7.cough
+8.enough
+9.though
+10.bought
+11.brought
+12.drought
+13.school
+14.tough
+15.trough
+
+6
+homophones(must learn meaning)
+1.rain
+2.rein
+3.reign
+4.by
+5.buy
+6.bye
+7.road
+8.rowed
+9.rode
+10.you
+11.yew
+12.ewe
+13.main
+14.mane
+15.deer
+
+7
+wow words/synonyms
+
+1.incredible
+2.epic
+3.phenomenal
+4.wonderful
+5.colossal
+6.immense
+7.monumental
+8.monstrous
+9.minuscule
+10.microscopic
+11.ecstatic
+12.elated
+13.joyous
+14.miserable
+15.depressed
+
+8
+suffix -ness and ment
+
+1. fairness
+2. kindness
+3. fitness
+4. rudeness
+5. happiness
+6. tidiness
+7. sadness
+8. unkindness
+9. statement
+10. movement
+11. enjoyment
+12. pavement
+13. government
+14. argument
+15. amazement
+
+
+
+9
+prefixes cir trans-
+
+1.circular
+2.circumference
+3.circus
+4.circuit
+5.circulate
+6.circumstance
+7.circle
+8.transfer
+9.transparent
+10.transatlantic
+11.translate
+12.transform
+13.transmit
+14.transport
+15.translation
+
+10
+suffixes -able and ible
+
+1.vegetable
+2.reliable
+3.probable
+4.portable
+5.fable
+6.stable
+7.cradle
+8.valuable
+9.terrible
+10.horrible
+11.invisible
+12.impossible
+13.responsible
+14.sensible
+15.flexible
+
+11
+soft 'c'
+
+1.cinema
+2.decide
+3.cereal
+4.centre
+5.cylinder
+6.mercy
+7.celebration
+8.December
+9.circumstances
+10.accident
+11.certificate
+12.citizen
+13.decimal
+14.disciple
+15.deceive
+
+
+12
+tion/sion
+
+1. creation
+2. variation
+3. inflation
+4. vacation
+5. fraction
+6. friction
+7. portion
+8. addition
+9. confusion
+10.division
+11.question
+12.action
+13.station
+14.caption
+15. subtraction

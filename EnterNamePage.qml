@@ -3,7 +3,6 @@ import QtQuick.Controls 2.2
 
 import Qt.spellingGame.gameController 1.0
 
-
 Item {
     Text {
         id: headingText
@@ -23,48 +22,60 @@ Item {
 
         wrapMode: Text.WordWrap
 
-        text: "You've completed all of these lists:"
+        text: "Hi, please enter your name:"
     }
 
     Rectangle {
-        anchors.top: headingText.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: nextButton.top
 
         anchors.margins: 20
+        anchors.left: parent.left
+        anchors.right: parent.right
 
-        border.color: "black"
+        height: parent.height*0.1
 
-        ListView {
+        anchors.top: headingText.bottom
+
+        border.color: 'black'
+
+        TextInput {
+            id: typedText
             anchors.fill: parent
             anchors.margins: 10
 
-            model: GameControl.completedLists
+            font.family: "Chunky Felt"
+            font.pointSize: 18
 
-            delegate: Text {
-                font.family: "Chunky Felt"
-                font.pointSize: 14
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
 
-                text: modelData
-            }
+            inputMethodHints: Qt.ImhNoPredictiveText
         }
     }
 
     Button {
-        id: nextButton
         width: parent.width*0.6
-        height: parent.height*0.1
+        height: parent.height*0.2
 
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 20
 
         anchors.horizontalCenter: parent.horizontalCenter
 
-        font.family: "Chunky Felt"
-        font.pointSize: 24
 
-        text: "Back"
-        onClicked: GameControl.nextState("")
+        contentItem: Label {
+            font.family: "Chunky Felt"
+            font.pointSize: 14
+
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+
+            wrapMode: Text.WordWrap
+
+            text: "Done"
+        }
+
+        enabled: typedText.text.length>0
+
+        onClicked: GameControl.nextState(typedText.text)
     }
 }

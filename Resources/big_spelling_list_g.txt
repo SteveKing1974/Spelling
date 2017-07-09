@@ -1,0 +1,220 @@
+Medium Words 3
+
+1
+i-e/igh/
+1. night
+2. knight
+3. slight
+4. flight
+5. write
+6. sight
+7. site
+8. slime
+9. grime
+10. slice
+11. height
+12. climb
+13. icing
+14. writing
+15. trifle
+
+2
+ee/ea
+
+1. treat
+2. speak
+3. heat
+4. street
+5. sleet
+6. weak
+7. week
+8. meat
+9. meet
+10. weekend
+11. squeak
+12. spleen
+13. scene
+14. weaker
+15. complete
+
+
+3
+oa/ou/o-e/ow
+1. groan
+2. moan
+3. roll
+4. hole
+5. stole
+6. toe
+7. tow
+8. rode
+9. road
+10. coal
+11.telephone
+12. trombone
+13. dough
+14. throw
+15. stroll
+
+4
+ue/ow/ew/oo
+1. blue
+2. blew
+3. zoom
+4. swoop
+5. tune
+6. spoon
+7. crew
+8. few
+9. flew
+10. flume
+11. strewn
+12. through
+13. threw
+14. juice
+15. moose
+
+5
+ar/a
+1. harder
+2. task
+3. mask
+4. yard
+5. marker
+6. charm
+7. grass
+8. class
+9. shark
+10. chart
+11. sparkle
+12. charming
+13. artist
+14. father
+15. marking
+
+6
+ur/er/or
+1. hurt
+2. squirt
+3. herb
+4. stirred
+5. burn
+6. stern
+7. girl
+8. third
+9. worm
+10. heard
+11. purr
+12. prefer
+13. murder
+14. learn
+15. disturb
+
+7
+or
+1. sport
+2. scorn
+3. stork
+4. score
+5. shore
+6. porch
+7. horse
+8. store
+9. order
+10. corner
+11. force
+12. scorch
+13. cornea
+14. northerly
+15. sure
+
+8
+aw/au
+1. prawn
+2. sprawl
+3. fault
+4. haunt
+5. drawn
+6. shawl
+7. hawk
+8. yawn
+9. squawk
+10. straw
+11. taught
+12. naughty
+13. daughter
+14. sauce
+15. launch
+
+9
+ou/ow
+1. out
+2. trout
+3. hour
+4. sprout
+5. shout
+6. round
+7. found
+8. shower
+9. tower
+10. flower
+11. towel
+12. trowel
+13. showered
+14. plough
+15. outside
+
+10
+oi/oy
+1. boiling
+2. toil
+3. spoiled
+4. deploy
+5. coin
+6. joint
+7. coiled
+8. rejoice
+9. annoy
+10. ointment
+11. buoy
+12. royal
+13. disappoint
+14. convoy
+15. voyage
+
+11
+MFW
+1.work
+2.year
+3.above
+4.along
+5.asked
+6.began
+7.being
+8.below
+9.didn't
+10.earth
+11.every
+12.found
+13.great
+14.happy
+15.heard
+
+12
+MFW
+1.leave
+2.light
+3.might
+4.money
+5.never
+6.often
+7.other
+8.paper
+9.place
+10.right
+11.round
+12.small
+13.sound
+14.still
+15.think
+

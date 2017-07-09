@@ -5,9 +5,12 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     listmanager.cpp \
-    gamecontrol.cpp
+    gamecontrol.cpp \
+    scorecontrol.cpp
 
 RESOURCES += qml.qrc
+
+# https://sodadb.com/53UDNobImUSL45oU248C
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -33,4 +36,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     listmanager.h \
-    gamecontrol.h
+    gamecontrol.h \
+    scorecontrol.h

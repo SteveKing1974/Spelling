@@ -1,0 +1,221 @@
+Medium Words 4
+
+1
+prefixes un and dis-
+
+1. uncover
+2. unbutton
+3. unequal
+4. unlucky
+5. unhappy
+6. disagree
+7. disobey
+8. disappear
+9. disgrace
+10. dislike
+11. unpopular
+12. unimportant
+13. disobedient
+14. dishonest
+15. disapprove
+
+2
+air/are/ear
+
+1. fair
+2. stair
+3. stare
+4. spare
+5. care
+6. tear
+7. bear
+8. pear
+9. pair
+10. flair
+11. wear
+12. beware
+13. staircase
+14. where
+15. declare
+
+3
+ea/ee/ei/ie
+
+1. deer
+2. dear
+3. beer
+4. gear
+5. hear
+6. here
+7. smear
+8. steer
+9. near
+10. spear
+11.pier
+12. weird
+13. career
+14. tier
+15.appear
+
+4
+suffix -le
+
+1. little
+2. muddle
+3. simple
+4. tickle
+5. middle
+6. candle
+7. triple
+8. cuddle
+9. bangle
+10. triangle
+11. example
+12. couple
+13. bicycle
+14. wrinkle
+15. waddle
+
+5
+-ing
+1. speeding
+2. writing
+3. liking
+4. throwing
+5. shopping
+6. skipping
+7. spelling
+8. running
+9. taking
+10. shaking
+11. recycling
+12. watching
+13. cheating
+14. wrapping
+15. climbing
+
+6
+-ed
+1. pulled
+2. hopped
+3. chatted
+4. shopped
+5. skipped
+6. smiled
+7. stared
+8. raised
+9. cared
+10.watched
+11. decided
+12. enjoyed
+13. sprained
+14. planted
+15. imagined
+
+7
+-ful
+1. wonderful
+2. cheerful
+3. skilful
+4. wilful
+5. shameful
+6. hurtful
+7. thankful
+8. wishful
+9. mindful
+10. artful
+11. merciful
+12. successful
+13. peaceful
+14. beautiful
+15. truthful
+
+8
+plurals
+1. brushes
+2. watches
+3. churches
+4. wishes
+5. dishes
+6. glasses
+7. kisses
+8. bushes
+9. foxes
+10. witches
+11. pennies
+12. cherries
+13. parties
+14. armies
+15. puppies
+
+9
+MFW
+1.those
+2.today
+3.tries
+4.under
+5.until
+6.watch
+7.while
+8.whole
+9.world
+10.right
+11.young
+12.across
+13.almost
+14.around
+15.always
+
+10
+MFW
+1.better
+2.because
+3.change
+4.coming
+5.father
+6.follow
+7.garden
+8.inside
+9.jumped
+10.mother
+11.number
+12.opened
+13.second
+14.window
+15.during
+
+11
+MFW
+1.animals
+2.balloon
+3.between
+4.brought
+5.clothes
+6.friends
+7.morning
+8.outside
+9.started
+10.stopped
+11.thought
+12.through
+13.without
+14.birthday
+15.children
+
+12
+MFW
+1.different
+2.important
+3.something
+4.sometimes
+5.suddenly
+6.swimming
+7.together
+8.want
+9.what
+10.where
+11.know
+12.no
+13.their
+14.there
+15.was

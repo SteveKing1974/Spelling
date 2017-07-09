@@ -8,11 +8,14 @@ Window {
     visible: true
     width: 640
     height: 480
-    title: qsTr("Hello World")
+    title: qsTr("Spelling")
 
     MainPage {
         anchors.fill: parent
-        visible: GameControl.gameState != GameControl.StartPage && GameControl.gameState != GameControl.Score
+        visible: GameControl.gameState != GameControl.StartPage
+                 && GameControl.gameState != GameControl.Score
+                 && GameControl.gameState != GameControl.EnterName
+                 && GameControl.gameState != GameControl.ListComplete
     }
 
     StartPage {
@@ -23,5 +26,15 @@ Window {
     ScorePage {
         anchors.fill: parent
         visible: GameControl.gameState == GameControl.Score
+    }
+
+    EnterNamePage {
+        anchors.fill: parent
+        visible: GameControl.gameState == GameControl.EnterName
+    }
+
+    CongratsPage {
+        anchors.fill: parent
+        visible: GameControl.gameState == GameControl.ListComplete
     }
 }

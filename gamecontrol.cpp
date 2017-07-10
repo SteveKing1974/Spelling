@@ -6,7 +6,8 @@
 GameControl::GameControl(QObject *parent) :
     QObject(parent),
     m_State(GameControl::StartPage),
-    m_CurrentIndex(0)
+    m_CurrentIndex(0),
+    m_InTest(false)
 {
     m_speech = new QTextToSpeech(this);
 
@@ -33,9 +34,7 @@ GameControl::GameState GameControl::gameState() const
 
 QStringList GameControl::allSets() const
 {
-    QStringList sets = m_WordLists.allFiles();
-    std::sort(sets.begin(), sets.end());
-    return sets;
+    return m_WordLists.allFiles();
 }
 
 QStringList GameControl::listsInSet() const
@@ -83,9 +82,49 @@ QStringList GameControl::completedLists() const
     return m_Scorer.completedLists();
 }
 
+int GameControl::listsUntilTestAvailable() const
+{
+    int toDo = 0;
+    const QStringList tmpList = listsInSet();
+    QStringList::const_iterator i = tmpList.begin();
+
+    while (i!=tmpList.end())
+    {
+        if (!isListCompleted(*i))
+        {
+            ++toDo;
+        }
+        ++i;
+    }
+
+    return toDo;
+}
+
 bool GameControl::isListCompleted(const QString &listName) const
 {
     return m_Scorer.isListComplete(m_WordLists.selectedFile(), listName);
+}
+
+bool GameControl::isSetAvailable(const QString &setName) const
+{
+    QStringList doneSets = m_Scorer.completedSets();
+
+    if (doneSets.contains(setName))
+    {
+        return true;
+    }
+
+    QStringList unfinishedSets = allSets();
+    while (!doneSets.isEmpty())
+    {
+        unfinishedSets.removeAll(doneSets.takeFirst());
+    }
+
+    if (unfinishedSets.length()>0)
+    {
+        return setName == unfinishedSets.at(0);
+    }
+    return true;
 }
 
 void GameControl::nextState(const QString &typedVal)
@@ -138,21 +177,42 @@ void GameControl::nextState(const QString &typedVal)
 
     case Correct:
         ++m_CurrentIndex;
-        if (m_CurrentIndex>=m_WordLists.selectedList().count())
+        if (m_CurrentIndex>=m_WordLists.wordsInList().count())
         {
-            m_Scorer.listCompleted(m_WordLists.selectedFile(), m_WordLists.selectedList());
+            if (m_InTest)
+            {
+                m_Scorer.testCompleted(m_WordLists.selectedFile());
+            }
+            else
+            {
+                m_Scorer.listCompleted(m_WordLists.selectedFile(), m_WordLists.selectedList());
+            }
             m_CurrentIndex = 0;
             m_State = ListComplete;
         }
         else
         {
-            m_State = Look;
+            if (m_InTest)
+            {
+                m_State = Write;
+            }
+            else
+            {
+                m_State = Look;
+            }
             wordValChanged = true;
         }
         break;
 
     case Wrong:
-        m_State = Look;
+        if (m_InTest)
+        {
+            m_State = Write;
+        }
+        else
+        {
+            m_State = Look;
+        }
         break;
 
     case ListComplete:
@@ -184,4 +244,17 @@ void GameControl::showScores()
 void GameControl::sayWord() const
 {
     m_speech->say(currentWord());
+}
+
+void GameControl::startTest()
+{
+    m_InTest = true;
+    m_WordLists.setSelectedList(QString());
+    m_CurrentIndex = 0;
+    m_State = Write;
+
+    m_speech->say(currentWord());
+
+    emit currentWordChanged();
+    emit gameStateChanged();
 }

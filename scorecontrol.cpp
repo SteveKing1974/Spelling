@@ -33,13 +33,30 @@ void ScoreControl::listCompleted(const QString &setName, const QString &listName
         done.append(doneString);
         m_Settings.setValue("completed", done);
         emit completedListsChanged();
+        m_Settings.sync();
     }
-    m_Settings.sync();
+}
+
+void ScoreControl::testCompleted(const QString &setName)
+{
+    QStringList tmp = completedSets();
+    if (!tmp.contains(setName))
+    {
+        tmp.append(setName);
+        m_Settings.setValue("completedSets", tmp);
+        emit completedSetsChanged();
+        m_Settings.sync();
+    }
 }
 
 QStringList ScoreControl::completedLists() const
 {
     return m_Settings.value("completed").toStringList();
+}
+
+QStringList ScoreControl::completedSets() const
+{
+    return m_Settings.value("completedSets").toStringList();
 }
 
 bool ScoreControl::isListComplete(const QString &setName, const QString &listName) const

@@ -41,6 +41,32 @@ Item {
 
         model: GameControl.allSets
 
+        delegate: ItemDelegate {
+            id: setDelegate
+            width: wordListSelect.width
+            enabled: GameControl.isSetAvailable(modelData)
+            contentItem: Item {
+                Text {
+                    text: modelData
+                    font.family: wordListSelect.font.family
+                    font.pointSize: 14
+                    elide: Text.ElideRight
+                    verticalAlignment: Text.AlignVCenter
+                    anchors.left: parent.left
+                    font.italic: !setDelegate.enabled
+                    opacity: setDelegate.enabled ? 1 : 0.5
+                }
+
+                Image {
+                    anchors.right: parent.right
+                    source: "qrc:/Icons/lock.png"
+                    height: parent.height
+                    width: height
+                    visible: !setDelegate.enabled
+                }
+            }
+        }
+
         onActivated: {
             GameControl.currentSet = GameControl.allSets[index]
         }
@@ -96,8 +122,16 @@ Item {
         font.family: "Chunky Felt"
         font.pointSize: 24
 
-        text: "Completed Lists"
-        onClicked: GameControl.showScores()
+        text: {
+            if (enabled)
+            {
+                return "Start Test"
+            }
+
+            return "Only " + GameControl.listsUntilTestAvailable + " until test"
+        }
+        enabled: GameControl.listsUntilTestAvailable==0
+        onClicked: GameControl.startTest()
     }
 
     Button {
@@ -113,7 +147,7 @@ Item {
         font.family: "Chunky Felt"
         font.pointSize: 24
 
-        text: "Start"
+        text: "Start List"
         onClicked: GameControl.nextState(wordListSelect.currentText)
     }
 }

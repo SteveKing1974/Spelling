@@ -10,6 +10,7 @@ class ScoreControl : public QObject
 
     Q_PROPERTY(QString username READ username WRITE setUsername NOTIFY usernameChanged)
     Q_PROPERTY(QStringList completedLists READ completedLists NOTIFY completedListsChanged)
+    Q_PROPERTY(QStringList completedSets READ completedSets NOTIFY completedSetsChanged)
 
 
 public:
@@ -19,14 +20,18 @@ public:
     QString username() const;
 
     void listCompleted(const QString& setName, const QString& listName);
+    void testCompleted(const QString& setName);
 
     QStringList completedLists() const;
+
+    QStringList completedSets() const;
 
     bool isListComplete(const QString& setName, const QString& listName) const;
 
 signals:
     void usernameChanged();
     void completedListsChanged();
+    void completedSetsChanged();
 
 private:
     void updateSettings();

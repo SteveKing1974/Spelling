@@ -22,5 +22,7 @@
         <file>Resources/big_spelling_list_p.txt</file>
         <file>Resources/big_spelling_list_c.txt</file>
         <file>Resources/big_spelling_list_d.txt</file>
+        <file>TestPage.qml</file>
+        <file>Icons/lock.png</file>
     </qresource>
 </RCC>

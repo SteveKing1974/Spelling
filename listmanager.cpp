@@ -4,6 +4,8 @@
 #include <QFile>
 #include <QDebug>
 
+#include <QTime>
+
 enum FileReadState {
     eWaitingForHeader,
     eReadingHeader,
@@ -54,7 +56,17 @@ void ListManager::loadLists()
 
 QStringList ListManager::allFiles() const
 {
-    return m_AllFiles.keys();
+    QStringList filenames = m_AllFiles.values();
+    std::sort(filenames.begin(), filenames.end());
+
+    QStringList setsEasyToHard;
+    QStringList::const_iterator i = filenames.begin();
+    while (i!=filenames.end())
+    {
+        setsEasyToHard.append(m_AllFiles.key(*i));
+        ++i;
+    }
+    return setsEasyToHard;
 }
 
 QString ListManager::selectedFile() const
@@ -91,10 +103,35 @@ QString ListManager::selectedList() const
 
 void ListManager::setSelectedList(const QString &val)
 {
-    if ((val != m_SelectedList) && m_AllLists.contains(val))
+    if (val.isEmpty())
     {
-        m_SelectedList = val;
+        m_SelectedList.clear();
+
+        // Make up a set of 20 from all lists
+        QHash<QString, QStringList>::const_iterator i = m_AllLists.begin();
+        QSet<QString> allUniqueWords;
+        while (i!=m_AllLists.end())
+        {
+            allUniqueWords += i.value().toSet();
+            ++i;
+        }
+
+        qsrand(QTime::currentTime().msecsSinceStartOfDay());
+
+        QStringList listOfWords = allUniqueWords.toList();
+        while (m_SelectedList.count()<20)
+        {
+            m_SelectedList.append(listOfWords.takeAt(qrand()%listOfWords.count()));
+        }
         emit selectedListChanged();
+    }
+    else
+    {
+        if ((val != m_SelectedList) && m_AllLists.contains(val))
+        {
+            m_SelectedList = val;
+            emit selectedListChanged();
+        }
     }
 }
 
